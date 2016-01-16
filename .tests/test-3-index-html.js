@@ -1,5 +1,5 @@
 var
-  MultiLineError = require('./test-utils').MultiLineError,
+  MultiLineError = require('./multi-line-error').MultiLineError,
   fs = require('fs'),
   util = require('util'),
   validator = require('w3cjs'),
