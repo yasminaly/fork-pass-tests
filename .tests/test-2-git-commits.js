@@ -6,7 +6,7 @@ var
   gitCountCommits = require('git-count-commits')
 ;
 
-var MIN_COMMITS = 11;
+var MIN_COMMITS = 12;
 
 /*
   +++++++++++++++++++++++++++++++++++++++++++++++
@@ -21,7 +21,7 @@ describe('# git commits', function () {
 
     gitCountCommits(repoPath, function(err, commits) {
       if (commits < MIN_COMMITS || err) {
-        throw new MultiLineError('Git Commits', [util.format("Not enough commits to the repository (%d expecting %d)", commits, MIN_COMMITS)]);
+        throw new MultiLineError('Git Commits', [util.format("Not enough commits to the repository (has %d, expecting %d)", commits, MIN_COMMITS)]);
       }
 
       done();
