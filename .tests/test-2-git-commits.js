@@ -1,12 +1,12 @@
 var
-  MultiLineError = require('./test-utils').MultiLineError,
+  MultiLineError = require('./multi-line-error').MultiLineError,
   fs = require('fs'),
   path = require('path'),
   util = require('util'),
   gitCountCommits = require('git-count-commits')
 ;
 
-var MIN_COMMITS = 9;
+var MIN_COMMITS = 3;
 
 /*
   +++++++++++++++++++++++++++++++++++++++++++++++
